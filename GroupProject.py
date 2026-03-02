@@ -34,8 +34,8 @@ class Student:
         total_credits = 0
         total_points = 0
         for course, grade in self.student_courses:
-            total_credits += course.course_credits
-            total_points += course.course_credits * grade
+            total_credits += self.course_credits
+            total_points += self.course_credits * grade
         if total_credits == 0:
             return 0
         return total_points / total_credits
